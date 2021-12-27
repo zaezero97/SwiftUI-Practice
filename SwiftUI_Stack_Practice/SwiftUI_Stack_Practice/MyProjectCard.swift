@@ -8,14 +8,20 @@
 import SwiftUI
 
 struct MyProjectCard: View {
+    
+    @State
+    var shouldShowAlert = false
+    
+   
+    
     var body: some View {
+        
         VStack(alignment: .leading, spacing: 0){
-            
             Rectangle()
                 .frame(height: 0) // 가로로 늘리기 위해
             Text("제제로 프로젝트")
                 .font(.system(size: 23))
-                .foregroundColor(.black)
+                .foregroundColor(shouldShowAlert ? .black : .purple)
                 .padding(.bottom, 5)
             Text("10 AM ~ 11AM")
                 .foregroundColor(.gray)
@@ -40,13 +46,23 @@ struct MyProjectCard: View {
                     .clipShape(Circle())
                 
                 Spacer()
-                Text("확인")
-                    .fontWeight(.bold)
-                    .foregroundColor(.white)
-                    .padding()
-                    .frame(width: 80)
-                    .background(Color.blue)
-                    .cornerRadius(20)
+                
+                Button(action: {
+                    print("확인 버튼이 클릭되었다.")
+                   self.shouldShowAlert = true
+                   
+                }) {
+                    Text("확인")
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                        .padding()
+                        .frame(width: 80)
+                        .background(Color.blue)
+                        .cornerRadius(20)
+                }.alert(isPresented: $shouldShowAlert){
+                    Alert(title: Text("알림창"), message: Text("해피뉴이어"))
+                }
+               
                     
             }
         }.padding(30)

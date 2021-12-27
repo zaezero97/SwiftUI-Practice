@@ -13,6 +13,7 @@
 		AE99AC5F2779843C00F94DCC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE99AC5E2779843C00F94DCC /* Preview Assets.xcassets */; };
 		AE99AC662779847400F94DCC /* MyProjectCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE99AC652779847400F94DCC /* MyProjectCard.swift */; };
 		AE99AC6E27798E9900F94DCC /* MyBasicCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE99AC6D27798E9900F94DCC /* MyBasicCard.swift */; };
+		AE99AC702779977300F94DCC /* MyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE99AC6F2779977300F94DCC /* MyCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		AE99AC5E2779843C00F94DCC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AE99AC652779847400F94DCC /* MyProjectCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProjectCard.swift; sourceTree = "<group>"; };
 		AE99AC6D27798E9900F94DCC /* MyBasicCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBasicCard.swift; sourceTree = "<group>"; };
+		AE99AC6F2779977300F94DCC /* MyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			children = (
 				AE99AC572779843A00F94DCC /* SwiftUI_Stack_PracticeApp.swift */,
 				AE99AC592779843A00F94DCC /* ContentView.swift */,
+				AE99AC6F2779977300F94DCC /* MyCard.swift */,
 				AE99AC5B2779843C00F94DCC /* Assets.xcassets */,
 				AE99AC5D2779843C00F94DCC /* Preview Content */,
 				AE99AC652779847400F94DCC /* MyProjectCard.swift */,
@@ -146,6 +149,7 @@
 				AE99AC662779847400F94DCC /* MyProjectCard.swift in Sources */,
 				AE99AC5A2779843A00F94DCC /* ContentView.swift in Sources */,
 				AE99AC6E27798E9900F94DCC /* MyBasicCard.swift in Sources */,
+				AE99AC702779977300F94DCC /* MyCard.swift in Sources */,
 				AE99AC582779843A00F94DCC /* SwiftUI_Stack_PracticeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
