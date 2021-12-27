@@ -15,8 +15,7 @@ struct ContentView: View {
                 Image("Zaezero")
                     .resizable()
                     .scaledToFill()
-                    .frame(width: nil, height: 10)
-                 
+                    .frame(height: 10)
                 
                 CircleImageView()
                 HStack {
